@@ -1,4 +1,10 @@
-""" Write a program that takes a count
-from sys.argv import and prints "Hello Python"
-count times
-"""
+
+import sys
+
+if len(sys.argv) != 2:
+    sys.exit("Please enter only one number")
+
+number = int(sys.argv[1])
+
+for i in range (number):
+    print "hello python"
