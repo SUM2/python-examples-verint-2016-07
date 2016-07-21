@@ -1,5 +1,9 @@
-"""
-Write a function that calculates the sum
-of the 10th digit from all arguments passed to it
-"""
 
+def mysum(*args):
+	total = 0
+	for i in args:
+		if isinstance (i, int):
+			total += (i / 10) % 10
+		else:
+			return False
+	print total
