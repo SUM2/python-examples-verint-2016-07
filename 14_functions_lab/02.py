@@ -1,7 +1,8 @@
-"""
-Write a function that takes two arguments: 
-    A string
-    And a number
-If wrong types were passed in, raise an exception
-"""
 
+
+def values(number, string):
+	if type(number) == int and type(string) == str:
+		return True
+	else:
+		raise Exception("First value should be number and second a string")
+			
