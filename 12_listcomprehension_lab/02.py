@@ -1,6 +1,3 @@
-"""
-Write a python program that takes two words
-as sys.argv and prints only the letters
-common to both
-"""
 
+lst = map(chr, range(ord('a'), ord('z')+1))
+print [x + y + z for x in lst for y in lst for z in lst]
